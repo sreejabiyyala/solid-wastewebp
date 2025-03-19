@@ -6,8 +6,7 @@
     <title>Solid Waste Management</title>
 </head>
 <body>
-
-    <h2>Register</h2>
+<h2>Register</h2>
     <form id="registerForm">
         <label>Name:</label>
         <input type="text" id="regName" required><br>
@@ -19,7 +18,6 @@
         <input type="password" id="regPassword" required><br>
         <button type="submit">Register</button>
     </form>
-
     <h2>Login</h2>
     <form id="loginForm">
         <label>Email:</label>
@@ -36,4 +34,28 @@
         <label>Mobile Number:</label>
         <input type="tel" id="mobile" required><br>
         <label>Location:</label>
-        <input type="text" id="location
+        <input type="text" id="location" required><br>
+        <label>Type of Waste:</label>
+        <select id="wasteType">
+            <option>Dry</option>
+            <option>Wet</option>
+            <option>Plastic</option>
+        </select><br>
+        <label>Upload Waste Photo:</label>
+        <input type="file" id="wastePhoto" accept="image/*"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Login functionality to be implemented!");
+        });
+
+        document.getElementById("wasteForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Waste details submitted!");
+        });
+    </script>
+</body>
+</html>
